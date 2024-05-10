@@ -1,0 +1,167 @@
+Panel
+  OptionCheckBox
+    id: vsync
+    !text: tr('Enable vertical synchronization')
+    !tooltip: tr('Limits your fps based on monitor refresh rate')
+
+  OptionCheckBox
+    id: showFps
+    !text: tr('Show frame rate')
+
+  OptionCheckBox
+    id: optimizeFps
+    !text: tr('Optimize FPS')
+    !tooltip: tr('Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR')
+
+  OptionCheckBox
+    id: forceEffectOptimization
+    !text: tr('Force Effect Optimization')
+    !tooltip: tr('Will avoid drawing effects on certain occasions.')
+
+  OptionCheckBox
+    id: enableLights
+    !text: tr('Enable lights')
+
+  OptionCheckBox
+    id: drawEffectOnTop
+    !text: tr('Draw Effect On Top')
+    !tooltip: tr('Draw effect after drawing the entire floor.')
+
+  OptionCheckBox
+    id: limitVisibleDimension
+    !text: tr('Limit Visible Dimension')
+    !tooltip: tr('The limit is based on your maximum range.')
+
+  OptionCheckBox
+    id: floatingEffect
+    !text: tr('Draw Floating Effects')
+
+  OptionCheckBox
+    id: fullscreen
+    !text: tr('Fullscreen')
+    tooltip: Ctrl+Shift+F
+
+  OptionCheckBox
+    id: dontStretchShrink
+    !text: tr('Don\'t stretch/shrink Game Window')
+
+  OptionCheckBox
+    id: asyncTxtLoading
+    !text: tr('Async texture loading')
+    !tooltip: tr('This option makes textures load asynchronously and uses less RAM.')
+
+  Label
+    id: floorViewModeLabel
+    !text: tr('Floor View Mode')..':'
+    phantom: false
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    margin-top: 13
+
+  ComboBox
+    id: floorViewMode
+    width: 180
+    anchors.left: prev.right
+    anchors.top: prev.top
+    margin-top: -4
+    margin-left: 5
+    mouse-scroll: false
+
+  Label
+    id: antialiasingModeLabel
+    !text: tr('Antialiasing Mode')..':'
+    phantom: false
+    anchors.left: floorViewModeLabel.left
+    anchors.top: prev.bottom
+    margin-top: 13
+
+  ComboBox
+    id: antialiasingMode
+    width: 120
+    anchors.left: prev.right
+    anchors.top: prev.top
+    margin-top: -4
+    margin-left: 5
+    mouse-scroll: false
+
+  Label
+    id: ambientLightLabel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: antialiasingModeLabel.top
+    margin-top: 25
+    @onSetup: |
+      local value = modules.client_options.getOption('ambientLight')
+      self:setText(tr('Ambient light: %s%%', value))
+
+  OptionScrollbar
+    id: ambientLight
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 3
+    minimum: 0
+    maximum: 100
+
+  Label
+    id: shadowFloorIntensityLevel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 12
+    @onSetup: |
+      local value = modules.client_options.getOption('shadowFloorIntensity')
+      self:setText(tr('Floor Shadowing Intensity: %s%%', value))
+
+  OptionScrollbar
+    id: shadowFloorIntensity
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 3
+    minimum: 0
+    maximum: 100
+
+  Label
+    id: floorFadingLabel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 12
+    @onSetup: |
+      local value = modules.client_options.getOption('floorFading')
+      self:setText(tr('Floor Fading: %s ms', value))
+
+  OptionScrollbar
+    id: floorFading
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 3
+    minimum: 0
+    maximum: 1000
+
+  Label
+    id: backgroundFrameRateLabel
+    !text: tr('Game framerate limit: %s', 'max')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 12
+    @onSetup: |
+      local value = modules.client_options.getOption('backgroundFrameRate')
+      local text = value
+      if value <= 0 or value >= 201 then
+        text = 'max'
+      end
+
+      self:setText(tr('Game framerate limit: %s', text))
+
+  OptionScrollbar
+    id: backgroundFrameRate
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 3
+    minimum: 10
+    maximum: 201

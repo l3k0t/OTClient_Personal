@@ -1,0 +1,105 @@
+Panel
+  OptionCheckBox
+    id: healthCheckBox
+    !text: tr('Health circle')
+    !tooltip: tr('On health circle')
+    @onCheckChange: |
+      if self:isChecked() then
+        modules.game_healthcircle.setHealthCircle(true)
+      else
+        modules.game_healthcircle.setHealthCircle(false)
+      end
+
+  OptionCheckBox
+    id: manaCheckBox
+    !text: tr('Mana circle')
+    !tooltip: tr('On mana circle')
+    @onCheckChange: |
+      if self:isChecked() then
+        modules.game_healthcircle.setManaCircle(true)
+      else
+        modules.game_healthcircle.setManaCircle(false)
+      end
+
+  OptionCheckBox
+    id: experienceCheckBox
+    !text: tr('Experience circle')
+    !tooltip: tr('On experience circle')
+    @onCheckChange: |
+      if self:isChecked() then
+        modules.game_healthcircle.setExpCircle(true)
+      else
+        modules.game_healthcircle.setExpCircle(false)
+      end
+
+  OptionCheckBox
+    id: skillCheckBox
+    !text: tr('Skill circle')
+    !tooltip: tr('On skill circle')
+    @onCheckChange: |
+      if self:isChecked() then
+        modules.game_healthcircle.setSkillCircle(true)
+      else
+        modules.game_healthcircle.setSkillCircle(false)
+      end
+
+  Label
+    id: chooseSkillLabel
+    !text: tr('Skill:')
+    !tooltip: tr('Choose skill to show in skill circle.')
+    phantom: false
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    margin-top: 13
+
+  ComboBox
+    id: chooseSkillComboBox
+    width: 120
+    anchors.left: prev.right
+    anchors.top: prev.top
+    margin-top: -4
+    margin-left: 5
+    mouse-scroll: false
+    @onTextChange: modules.game_healthcircle.setSkillType(self:getCurrentOption().data)
+
+  Label
+    id: distFromCenLabel
+    phantom: false
+    !tooltip: tr('Set distance from center.')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 8
+
+  OptionScrollbar
+    id: distFromCenScrollbar
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 3
+    minimum: 0
+    maximum: 100
+    @onValueChange: |
+      modules.game_healthcircle.optionPanel:recursiveGetChildById('distFromCenLabel'):setText(tr('Distance: %s', self:getValue()))
+      modules.game_healthcircle.setDistanceFromCenter(self:getValue())
+
+  Label
+    id: opacityLabel
+    phantom: false
+    !tooltip: tr('Set circle opacity.')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: distFromCenScrollbar.bottom
+    margin-top: 8
+
+  OptionScrollbar
+    id: opacityScrollbar
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 5
+    minimum: 0
+    maximum: 100
+    @onValueChange: |
+      modules.game_healthcircle.optionPanel:recursiveGetChildById('opacityLabel'):setText(tr('Opacity: %s', self:getValue() / 100))
+      modules.game_healthcircle.setCircleOpacity(self:getValue() / 100)
