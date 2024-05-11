@@ -52,7 +52,6 @@ g_resources.searchAndAddPackages('/', '.otpkg', true)
 g_configs.loadSettings('/config.otml')
 
 g_modules.discoverModules()
-
 -- libraries modules 0-99
 g_modules.autoLoadModules(99)
 g_modules.ensureModuleLoaded('corelib')
@@ -71,9 +70,8 @@ local function loadModules()
     -- mods 1000-9999
     g_modules.autoLoadModules(9999)
     g_modules.ensureModuleLoaded('client_mods')
-
     local script = '/' .. g_app.getCompactName() .. 'rc.lua'
-
+	
     if g_resources.fileExists(script) then
         dofile(script)
     end
