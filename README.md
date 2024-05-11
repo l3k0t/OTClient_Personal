@@ -2,6 +2,11 @@
 Uma versão adaptada para jogos baseados em Tibia (Testado em 8.54 8.60, 8.70) que combina o melhor do OTClient v8 e OTClient Edubard. Construído sobre a base confiável do OTclient MeHah 3.1, este cliente oferece uma experiência única e personalizada para os jogadores de OTServ.
 
 
+
+https://github.com/l3k0t/OTClient_Personal/assets/93864048/74c63988-b3ff-40cc-aecb-d6505a353a80
+
+
+
 RELEASES DOWNLOADS:
 
 
