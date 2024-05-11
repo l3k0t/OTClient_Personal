@@ -7,14 +7,9 @@ Firt Release OTClient Personal 5.0, Dll e exe: [Download](https://github.com/l3k
 Personalizado por: [@l3k0t](https://tibiaking.com/profile/76262-l3k0t/)
 
 
+RELEASES DOWNLOADS:
 
 
-
-Bases:
-
-[Otclient edubart](https://github.com/edubart/otclient)
-
-[Oclient Mehah 3.1](https://github.com/mehah/otclient)
-
-[OTCv8 3.2 rev 4](https://github.com/OTCv8/otclientv8)
+11/05/2024 - [Download OTClient 5.1](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_0.5)
+10/05/2024 - [Download OTClient 5.0](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_0.5)
 
