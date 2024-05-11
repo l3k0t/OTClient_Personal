@@ -5,9 +5,9 @@ Uma versão adaptada para jogos baseados em Tibia (Testado em 8.54 8.60, 8.70) q
 RELEASES DOWNLOADS:
 
 
-11/05/2024 - [Download OTClient 5.1](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_0.5)
+11/05/2024 - [Download OTClient 5.1](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_5.1)
 
-10/05/2024 - [Download OTClient 5.0](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_0.5)
+10/05/2024 - [Download OTClient 5.0](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_5.0)
 
 
 
