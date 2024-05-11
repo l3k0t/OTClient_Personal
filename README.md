@@ -13,3 +13,13 @@ RELEASES DOWNLOADS:
 
 Personalizado por: [@l3k0t](https://tibiaking.com/profile/76262-l3k0t/)
 
+
+
+![image](https://github.com/l3k0t/OTClient_Personal/assets/93864048/2b22eecd-debd-4644-9fd8-0a3987af0f68)
+
+
+![image](https://github.com/l3k0t/OTClient_Personal/assets/93864048/51c6ec70-1201-4eda-9b87-24f83bdf265f)
+
+
+![image](https://github.com/l3k0t/OTClient_Personal/assets/93864048/a714c3e6-3262-4188-9acb-16867556ff3e)
+
