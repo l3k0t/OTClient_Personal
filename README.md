@@ -3,10 +3,6 @@ Uma versão adaptada para jogos baseados em Tibia (Testado em 8.54 8.60, 8.70) q
 
 
 
-https://github.com/l3k0t/OTClient_Personal/assets/93864048/74c63988-b3ff-40cc-aecb-d6505a353a80
-
-
-
 RELEASES DOWNLOADS:
 
 
@@ -18,6 +14,8 @@ RELEASES DOWNLOADS:
 
 Personalizado por: [@l3k0t](https://tibiaking.com/profile/76262-l3k0t/)
 
+
+https://github.com/l3k0t/OTClient_Personal/assets/93864048/74c63988-b3ff-40cc-aecb-d6505a353a80
 
 
 ![image](https://github.com/l3k0t/OTClient_Personal/assets/93864048/2b22eecd-debd-4644-9fd8-0a3987af0f68)
