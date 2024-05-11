@@ -11,5 +11,6 @@ Download Dll e .exe Download [OTclient_Personalx64.exe](https://www.mediafire.co
 
 ![image](https://github.com/l3k0t/OTcliente_Personal_5.0/assets/93864048/196f149e-c555-414b-a2e0-7697f49238ab)
 
-![image](https://github.com/l3k0t/OTcliente_Personal_5.0/assets/93864048/7977ce87-f7dc-4533-851d-f47d6e10bcf3)
+![image](https://github.com/l3k0t/OTcliente_Personal_5.0/assets/93864048/115fc1ab-6c9c-4eef-bbea-6b51668d7836)
+
 
