@@ -5,12 +5,15 @@ Autor:
 Personalizado por: [@l3k0t](https://tibiaking.com/profile/76262-l3k0t/)
 
 
+
 Bases:
+
 [Otclient edubart](https://github.com/edubart/otclient)
 
 [Oclient Mehah 3.1](https://github.com/mehah/otclient)
 
 [OTCv8 3.2 rev 4](https://github.com/OTCv8/otclientv8)
+
 
 
 Downoad Dll e exe:
