@@ -3,7 +3,10 @@ Uma versão adaptada para jogos baseados em Tibia (Testado em 8.54 8.60, 8.70) q
 
 Firt Release OTClient Personal 5.0, Dll e exe: [Download](https://github.com/l3k0t/OTClient_Personal/releases/tag/otclient_0.5)
 
+
 Personalizado por: [@l3k0t](https://tibiaking.com/profile/76262-l3k0t/)
+
+
 
 
 
