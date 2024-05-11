@@ -7,8 +7,8 @@ Services = {
 }
 
 g_app.setName("OTclient Personal");
-g_app.setCompactName("otclient");
-g_app.setOrganizationName("L3K0T");
+g_app.setCompactName("L3K0T");
+g_app.setOrganizationName("L3K0T_Config");
 
 g_app.hasUpdater = function()
     return (Services.updater and Services.updater ~= "" and g_modules.getModule("updater"))
