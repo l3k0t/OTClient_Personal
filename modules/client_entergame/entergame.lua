@@ -175,9 +175,6 @@ function EnterGame.init()
       print(string.format('Warning: %s recognized as an installed client, but not supported.', proto_str))
     end
   end
-  --L3K0T
-    EnterGame.setUniqueServer("127.0.0.1", 7171, 860)
-	--FIM
   clientBox:setCurrentOption(clientVersion)
 
   EnterGame.toggleAuthenticatorToken(clientVersion, true)
@@ -191,7 +188,11 @@ function EnterGame.init()
   if g_app.isRunning() and not g_game.isOnline() then
     enterGame:show()
   end
-
+  
+  --L3K0T
+    EnterGame.setUniqueServer("127.0.0.1", 7171, 860)
+	--FIM
+	
 end
 
 function EnterGame.firstShow()
