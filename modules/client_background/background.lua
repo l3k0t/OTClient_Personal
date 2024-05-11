@@ -8,7 +8,7 @@ function init()
     background:lower()
 
     clientVersionLabel = background:getChildById('clientVersionLabel')
-    clientVersionLabel:setText(g_app.getName() .. '\n' .. 'Versão: 5.0.1\n' .. 'Built on ' ..
+    clientVersionLabel:setText(g_app.getName() .. '\n' .. 'Versão: 5.0\n' .. 'Built on ' ..
    g_app.getBuildDate() .. '\n By L3K0T.')
 
    if not g_game.isOnline() then
