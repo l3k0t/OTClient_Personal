@@ -23,6 +23,10 @@ end
 
 function load(version)
     local errorMessage = ''
+	
+g_game.enableFeature(GameBlueNpcNameColor) --ativar npc com cores azul claro
+--g_game.enableFeature(GameSpritesAlphaChannel) --ativar transparência
+--g_game.enableFeature(GameSpritesU32) --ativar cliente extendido
 
     if version >= 1281 then
         if not g_things.loadAppearances(resolvepath(string.format('/things/%d/catalog-content', version))) then
