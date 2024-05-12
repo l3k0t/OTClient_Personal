@@ -3,10 +3,10 @@
 
 -- updater
 Services = {
-    --updater = "",
+    --updater = "", --desabled
 }
 
-g_app.setName("OTclient Personal");
+g_app.setName("OTClient Personal");
 g_app.setCompactName("L3K0T");
 g_app.setOrganizationName("L3K0T_Config");
 
@@ -18,8 +18,6 @@ end
 g_logger.setLogFile(g_resources.getWorkDir() .. g_app.getCompactName() .. '.log')
 g_logger.info(os.date('== application started at %b %d %Y %X'))
 g_logger.info("== operating system: " .. g_platform.getOSName())
-
--- print first terminal message
 
 -- setup lua debugger
 if os.getenv("LOCAL_LUA_DEBUGGER_VSCODE") == "1" then
@@ -77,13 +75,9 @@ local function loadModules()
     end
 end
 
--- run updater, must use data.zip
 if g_app.hasUpdater() then
     g_modules.ensureModuleLoaded("updater")
     return Updater.init(loadModules)
    end
 
 loadModules()
-
--- uncomment the line below so that modules are reloaded when modified. (Note: Use only mod dev)
--- g_modules.enableAutoReload()
